@@ -1,0 +1,5 @@
+---
+- name: Install CrashPlan via Homebrew Cask
+  homebrew_cask:
+    name: crashplan
+  when: ansible_os_family == "Darwin"
